@@ -19,7 +19,7 @@ sha256sums=(
 	'SKIP'
 	'55621606d74d3fa04d7ae0046ac88623648c587dae2b6addd1e081a587f6fe6d'
 	'5ef3e25f5391707fdc461a8c25817ddde38a1d34d125dc5b3c43f706b889ed8a')
-install=.install
+install=soniccd.install
 
 pkgver() {
 	cd "$srcdir/Sonic-CD-11-Decompilation"
