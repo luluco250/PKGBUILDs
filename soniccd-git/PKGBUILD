@@ -11,8 +11,13 @@ license=('reverse-engineered and unlicensed')
 makedepends=('git')
 depends=('sdl2' 'libogg' 'libtheora' 'libvorbis')
 provides=(soniccd)
-source=("git+${url}.git" 'soniccd.sh')
-sha256sums=('SKIP' 'SKIP')
+source=(
+	"git+${url}.git"
+	'soniccd-launcher')
+sha256sums=(
+	'SKIP'
+	'55621606d74d3fa04d7ae0046ac88623648c587dae2b6addd1e081a587f6fe6d')
+install=.install
 
 pkgver() {
 	cd "$srcdir/Sonic-CD-11-Decompilation"
@@ -25,8 +30,7 @@ build() {
 }
 
 package() {
-	install -Dm755 soniccd.sh "$pkgdir/usr/bin/soniccd"
+	install -Dm755 soniccd-launcher "$pkgdir/usr/bin/soniccd-launcher"
 	cd "$srcdir/Sonic-CD-11-Decompilation"
-	install -Dm755 soniccd "$pkgdir/opt/soniccd/soniccd"
-	echo "Make sure to copy Sonic CD's data files to /opt/soniccd/"
+	install -Dm755 soniccd "$pkgdir/usr/bin/soniccd"
 }
