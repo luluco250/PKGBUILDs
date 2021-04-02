@@ -1,14 +1,15 @@
 pkgbase = sonic3air-bin
 	pkgdesc = A fan-made widescreen remaster of Sonic 3 & Knuckles.
 	pkgver = v20.11.07.0
-	pkgrel = 2
+	pkgrel = 4
 	url = https://sonic3air.org/
 	arch = x86_64
 	license = custom:CC BY-NC-SA 4.0
-	makedepends = gdown
 	depends = opengl-driver
+	depends = sdl2
+	optdepends = discord: Discord rich presence support
 	provides = sonic3air
-	source = sonic3air.tar.gz::https://drive.google.com/u/0/uc?id=1Dla-2cFgHFsf5H3bdQaXE6WuXohIr6ld
+	source = sonic3air.tar.gz::https://drive.google.com/uc?export=download&confirm=Mf5F&id=1Dla-2cFgHFsf5H3bdQaXE6WuXohIr6ld
 	source = sonic3air.desktop
 	source = sonic3air.sh
 	source = LICENSE.md
