@@ -1,7 +1,6 @@
 [Desktop Entry]
 Name=Sonic 3 A.I.R.
 Type=Application
-Encoding=UTF-8
-Exec=/opt/sonic3air/sonic3air_linux
+Exec=/usr/bin/sonic3air
 Icon=/opt/sonic3air/data/icon.png
-Terminal=false
+Categories=Game
