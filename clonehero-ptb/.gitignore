@@ -1,1 +1,4 @@
 clonehero-linux*.tar.xz
+pkg/
+src/
+*.tar.zst
