@@ -26,7 +26,8 @@ depends=(
 	'libappindicator-gtk3'
 )
 source=(
-	"$pkgname-$pkgver-${arch[0]}.pkg.tar.xz::$url/releases/download/v$pkgver/$pkgname-$pkgver.pacman"
+	"$pkgname-$pkgver-${arch[0]}.pkg.tar.xz::"\
+	"$url/releases/download/v$pkgver/$pkgname-$pkgver.pacman"
 	"$url/raw/v$pkgver/LICENSE"
 )
 sha256sums=(
