@@ -1,0 +1,39 @@
+# shellcheck shell=bash disable=SC2034 disable=SC2154
+# Maintainer: Lucas Melo < luluco250 at gmail dot com >
+
+pkgname=r2modman
+pkgver='3.1.45'
+pkgrel=1
+pkgdesc=\
+'A simple and easy to use mod manager for several games using Thunderstore.'
+arch=('x86_64')
+url='https://github.com/ebkr/r2modmanPlus'
+license=('MIT')
+depends=(
+	'c-ares'
+	'ffmpeg'
+	'gtk3'
+	'http-parser'
+	'libevent'
+	'libvpx'
+	'libxslt'
+	'libxss'
+	'minizip'
+	'nss'
+	're2'
+	'snappy'
+	'libnotify'
+	'libappindicator-gtk3'
+)
+source=(
+	"$pkgname-$pkgver-${arch[0]}.pkg.tar.xz::$url/releases/download/v$pkgver/$pkgname-$pkgver.pacman"
+	"$url/raw/v$pkgver/LICENSE"
+)
+sha256sums=(
+	'e704772a4b9d6f37a51c8c3e1bd3a3f445361841d08acf378aafe1b1cb8dd641'
+	'ab4643c18a58edee5b0beac8278517f6475b2956d5999b40e3176297b9a0ce18'
+)
+
+package() {
+	cp -r "$srcdir"/{opt,usr} "$pkgdir/"
+}
