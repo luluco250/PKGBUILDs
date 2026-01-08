@@ -1,5 +1,7 @@
 # shellcheck shell=bash disable=SC2034,SC2154
 # Maintainer: lucasm < luluco250 at gmail dot com >
+# Contributor: normal < marlon at kern dot earth >
+# Contributor: Mr.Smith1974
 
 _basename=fallout2-ce
 pkgname=$_basename-game
