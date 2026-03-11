@@ -6,6 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/fallout2-ce-bin.git
 	branch = master
-	commit = 
+	commit = 90ae2771ab39458d33be220fc7ebcef613f155ca
+	parent = 750064f0c40075be19351374b9a495148988d026
 	method = merge
 	cmdver = 0.4.9
